@@ -4,232 +4,365 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Inner Peace • Mindfulness & Mental Wellness</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>
-        <nav> 
+    <header id="mainHeader">
+        <nav class="nav-container"> 
             <a class="brand-link" href="#heroArea">
-                <div><img src="./images/logo.png" alt=""></div> 
+                <div class="logo-wrapper"><img src="./images/logo.png" alt="Inner Peace Logo"></div> 
                 <span>Inner Peace</span>
             </a>
-            <ul class="main-menu">
-                <li><a href="#heroArea">Home</a></li>
-                <li><a href="#aboutSec">About</a></li>
-                <li><a href="#practiceArea">Practices</a></li>
-                <li><a href="#resourceSec">Resources</a></li>
-                <li><a href="#contactZone">Contact</a></li>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="main-menu" id="mainMenu">
+                <li><a href="#heroArea" class="nav-link">Home</a></li>
+                <li><a href="#aboutSec" class="nav-link">About</a></li>
+                <li><a href="#practiceArea" class="nav-link">Practices</a></li>
+                <li><a href="#resourceSec" class="nav-link">Resources</a></li>
+                <li><a href="#contactZone" class="nav-link cta-nav">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section id="heroArea">
-        <div class="hero-stuff">
-            <h1>Find Your Inner Peace</h1>
-            <p>Journey towards mental wellness through mindfulness, meditation, and self-discovery.</p> <a
-                class="cta-btn" href="#aboutSec">Begin Your Journey</a>
-        </div>
-    </section>
-    <section id="aboutSec">
-        <h2 class="section-title">Discover Mindfulness</h2>
-        <p class="section-sub">Transform your mind, transform your life</p>
-        <div class="info-flex">
-            <div class="info-block">
-                <div class="icon">🧠</div>
-                <h3>Rewire Your Brain</h3>
-                <p>Your daily 10 minutes can literally reshape your brain. (Still blows my mind.)</p>
+
+    <main>
+        <section id="heroArea">
+            <div class="hero-bg-overlay"></div>
+            <div class="hero-stuff animate-fade-in">
+                <h1>Find Your Inner Peace</h1>
+                <p>Journey towards mental wellness through mindfulness, meditation, and self-discovery.</p>
+                <a class="cta-btn primary-btn" href="#aboutSec">Begin Your Journey</a>
             </div>
-            <div class="info-block">
-                <div class="icon">⚡</div>
-                <h3>Instant Calm</h3>
-                <p>Breathing techniques that actually calm your nervous system.</p>
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
             </div>
-            <div class="info-block">
-                <div class="icon">🎯</div>
-                <h3>Peak Performance</h3>
-                <p>Get into flow faster — whether you’re working, creating, or just living.</p>
+        </section>
+
+        <section id="aboutSec" class="section-padding">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">Discover Mindfulness</h2>
+                <p class="section-sub">Transform your mind, transform your life</p>
             </div>
-        </div>
-        <div class="stats-wrap">
-            <div><span class="stat-num">85%</span> Stress Reduction</div>
-            <div><span class="stat-num">3X</span> Better Focus</div>
-            <div><span class="stat-num">10K+</span> Happy Members</div>
-            <div><span class="stat-num">4.9★</span> User Rating</div>
-        </div>
-        <div class="feature-box">
-            <h3>Why Choose Inner Peace?</h3>
-            <ul>
-                <li>Backed by neuroscience (not just vibes)</li>
-                <li>Adjusts to your personal needs</li>
-                <li>Certified instructor guidance</li>
-                <li>Track your progress over time</li>
-                <li>Inspired by Tooplate layouts</li>
-            </ul>
-        </div>
-    </section>
-    <section id="practiceArea">
-        <h2 class="section-title">Mindfulness Practices</h2>
-        <p class="section-sub">Build your own mindfulness toolkit</p>
-        <div class="container">
-            <div class="timeline-stack">
-            <div class="time-dot active">Foundation</div>
-            <div class="time-dot">Breathing</div>
-            <div class="time-dot">Awareness</div>
-            <div class="time-dot">Integration</div>
-        </div>
-        <div class="practice-list">
-            <div class="practice-box">
-                <div class="top">
-                    <div class="icon">🧘</div>
-                    <div>
-                        <h3>Foundation Meditation</h3>
-                        <span>10–20 minutes daily</span>
+            
+            <div class="info-flex">
+                <div class="info-block glass-card animate-on-scroll delay-1">
+                    <div class="icon-wrap">
+                        <span class="icon">🧠</span>
                     </div>
+                    <h3>Rewire Your Brain</h3>
+                    <p>Your daily 10 minutes can literally reshape your brain. Experience profound mental clarity.</p>
                 </div>
-                <p>Start with simple guided sessions. Build posture habits and learn how to tame wandering thoughts
-                    (still working on it myself honestly).</p>
-                <div class="benefit-chips">
-                    <span>Stress Reduction</span>
-                    <span>Mental Clarity</span>
-                    <span>Emotional Balance</span>
-                    <span>Better Sleep</span>
-                </div>
-            </div>
-            <div class="practice-box">
-                <div class="top">
-                    <div class="icon">🌬️</div>
-                    <div>
-                        <h3>Conscious Breathing</h3>
-                        <span>5–10 minetes</span> 
+                <div class="info-block glass-card animate-on-scroll delay-2">
+                    <div class="icon-wrap">
+                        <span class="icon">⚡</span>
                     </div>
+                    <h3>Instant Calm</h3>
+                    <p>Breathing techniques that quickly and effectively calm your nervous system in stressful moments.</p>
                 </div>
-                <p>Box breathing, 4-7-8, whatever works — surprisingly powerful for anxiety.</p>
-                <div class="benefit-chips">
-                    <span>Instant Calm</span>
-                    <span>Energy Boost</span>
-                    <span>Focus</span>
-                    <span>Anxiety Relief</span>
-                </div>
-            </div>
-            <div class="practice-box">
-                <div class="top">
-                    <div class="icon">📝</div>
-                    <div>
-                        <h3>Mindful Awareness</h3>
-                        <span>15 minutes daily</span>
+                <div class="info-block glass-card animate-on-scroll delay-3">
+                    <div class="icon-wrap">
+                        <span class="icon">🎯</span>
                     </div>
-                </div>
-                <p>Journaling, emotional check-ins, gratitude — small things, big shift.</p>
-                <div class="benefit-chips">
-                    <span>Self-Discovery</span>
-                    <span>EI</span>
-                    <span>Pattern Spotting</span>
-                    <span>Gratitude</span>
+                    <h3>Peak Performance</h3>
+                    <p>Get into flow faster — whether you’re working, creating, or simply enjoying daily living.</p>
                 </div>
             </div>
-            <div class="practice-box">
-                <div class="top">
-                    <div class="icon">🚶</div>
-                    <div>
-                        <h3>Living Mindfully</h3>
-                        <span>Throughout the day</span>
+
+            <div class="stats-wrap animate-on-scroll">
+                <div class="stat-item">
+                    <span class="stat-num">85%</span> 
+                    <span class="stat-label">Stress Reduction</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">3X</span> 
+                    <span class="stat-label">Better Focus</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">10K+</span> 
+                    <span class="stat-label">Happy Members</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">4.9★</span> 
+                    <span class="stat-label">User Rating</span>
+                </div>
+            </div>
+
+            <div class="feature-box glass-card animate-on-scroll">
+                <h3>Why Choose Inner Peace?</h3>
+                <ul class="feature-list">
+                    <li><span class="check-icon">✔</span> Backed by neuroscience</li>
+                    <li><span class="check-icon">✔</span> Adjusts to your personal needs</li>
+                    <li><span class="check-icon">✔</span> Certified instructor guidance</li>
+                    <li><span class="check-icon">✔</span> Track your progress over time</li>
+                    <li><span class="check-icon">✔</span> Daily mindfulness prompts</li>
+                    <li><span class="check-icon">✔</span> Community support network</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="practiceArea" class="section-padding dark-bg">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title text-light">Mindfulness Practices</h2>
+                <p class="section-sub text-light-muted">Build your own mindfulness toolkit</p>
+            </div>
+            <div class="practice-container">
+                <div class="timeline-stack animate-on-scroll">
+                    <div class="time-dot active">Foundation</div>
+                    <div class="time-dot">Breathing</div>
+                    <div class="time-dot">Awareness</div>
+                    <div class="time-dot">Integration</div>
+                </div>
+                <div class="practice-list">
+                    <div class="practice-box glass-card animate-on-scroll delay-1">
+                        <div class="top">
+                            <div class="icon">🧘</div>
+                            <div class="practice-meta">
+                                <h3>Foundation Meditation</h3>
+                                <span class="duration">10–20 min daily</span>
+                            </div>
+                        </div>
+                        <p>Start with simple guided sessions. Build posture habits and learn how to gently tame wandering thoughts.</p>
+                        <div class="benefit-chips">
+                            <span>Stress Reduction</span>
+                            <span>Mental Clarity</span>
+                            <span>Emotional Balance</span>
+                        </div>
                     </div>
-                </div>
-                <p>Eating, walking, working, conversations — presence transforms all of it.</p>
-                <div class="benefit-chips">
-                    <span>Present Living</span>
-                    <span>Simple Joy</span>
-                    <span>Mindful Communication</span>
-                    <span>Balance</span>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-    <section id="resourceSec">
-        <h2 class="section-title">Resources & Tools</h2>
-        <p class="section-sub">Supporting your mindfulness journey</p>
-        <div class="tab-row">
-            <button class="tabBtn active">Meditations</button>
-            <button class="tabBtn">Courses</button>
-            <button class="tabBtn">Tools</button>
-        </div>
-        <div class="resource-wrap">
-            <div class="resource-card">
-                <img src="./images/unsplash-blue-lakeside.avif" alt="">
-                <div class="card-meta">
-                    <h3>Morning Meditation</h3>
-                    <p>Start your day grounded and ready.</p>
-                </div>
-            </div>
-            <div class="resource-card">
-                <img src="./images/unsplash-mountain-cloud.avif" alt="">
-                <div class="card-meta">
-                    <h3>Stress Relief</h3>
-                    <p>Quick reset during tough moments.</p>
-                </div>
-            </div>
-            <div class="resource-card">
-                <img src="./images/unsplash-mountain-top.avif" alt="">
-                <div class="card-meta">
-                    <h3>Sleep Session</h3>
-                    <p>Ease into rest with a soothing practice.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="contactZone">
-        <h2 class="section-title">Connect With Us</h2>
-        <div class="contact-wrap">
-            <div class="contact-info">
-                <h3>Get in Touch</h3>
-                <div class="info-row">
-                    <div class="icon">📍</div>
-                    <div>
-                        <h4>Visit Us</h4>
-                        <p>123 Wellness Street<br>Mindful City, MC 12345</p>
+                    <div class="practice-box glass-card animate-on-scroll delay-2">
+                        <div class="top">
+                            <div class="icon">🌬️</div>
+                            <div class="practice-meta">
+                                <h3>Conscious Breathing</h3>
+                                <span class="duration">5–10 minutes</span> 
+                            </div>
+                        </div>
+                        <p>Box breathing, 4-7-8, whatever works for you — surprisingly powerful for immediate anxiety relief.</p>
+                        <div class="benefit-chips">
+                            <span>Instant Calm</span>
+                            <span>Energy Boost</span>
+                            <span>Anxiety Relief</span>
+                        </div>
                     </div>
-                </div>
-                <div class="info-row">
-                    <div class="icon">📧</div>
-                    <div>
-                        <h4>Email</h4>
-                        <p>hello@innerpeace.com<br>support@innerpeace.com</p>
+                    <div class="practice-box glass-card animate-on-scroll delay-3">
+                        <div class="top">
+                            <div class="icon">📝</div>
+                            <div class="practice-meta">
+                                <h3>Mindful Awareness</h3>
+                                <span class="duration">15 min daily</span>
+                            </div>
+                        </div>
+                        <p>Journaling, emotional check-ins, and gratitude reflections. Small daily practices that create a big shift.</p>
+                        <div class="benefit-chips">
+                            <span>Self-Discovery</span>
+                            <span>Pattern Spotting</span>
+                            <span>Gratitude</span>
+                        </div>
                     </div>
-                </div>
-                <div class="info-row">
-                    <div class="icon">📞</div>
-                    <div>
-                        <h4>Phone</h4>
-                        <p>+91 859-585-0153<br>Mon–Fri, 9am–6pm EST</p>
-                    </div>
-                </div>
-                <div class="info-row">
-                    <div class="icon">💬</div>
-                    <div>
-                        <h4>Live Chat</h4>
-                        <p>Available 24/7 (please don’t ask how)</p>
+                    <div class="practice-box glass-card animate-on-scroll delay-4">
+                        <div class="top">
+                            <div class="icon">🚶</div>
+                            <div class="practice-meta">
+                                <h3>Living Mindfully</h3>
+                                <span class="duration">Throughout day</span>
+                            </div>
+                        </div>
+                        <p>Eating, walking, working, conversations — bringing presence into daily activities transforms all of it.</p>
+                        <div class="benefit-chips">
+                            <span>Present Living</span>
+                            <span>Mindful Comms</span>
+                            <span>Balance</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="contact-form">
-                <h3>Send a Message</h3>
-                <form>
-                    <label>Your Name</label>
-                    <input type="text" required>
-                    <label>Email Address</label>
-                    <input type="email" required>
-                    <label>Subject</label>
-                    <input type="text" required>
-                    <label>Message</label>
-                    <textarea rows="4" required></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
+        </section>
+
+        <section id="resourceSec" class="section-padding">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">Resources & Tools</h2>
+                <p class="section-sub">Supporting your mindfulness journey</p>
             </div>
-        </div>
-    </section>
+            
+            <div class="tab-row animate-on-scroll">
+                <button class="tabBtn active">Meditations</button>
+                <button class="tabBtn">Courses</button>
+                <button class="tabBtn">Tools</button>
+            </div>
+            
+            <div class="resource-wrap">
+                <div class="resource-card glass-card animate-on-scroll delay-1">
+                    <div class="card-img-wrapper">
+                        <img src="./images/unsplash-blue-lakeside.avif" alt="Blue Lakeside Meditation">
+                        <div class="card-overlay"><span class="play-icon">▶</span></div>
+                    </div>
+                    <div class="card-meta">
+                        <span class="category-tag">Audio</span>
+                        <h3>Morning Meditation</h3>
+                        <p>Start your day grounded and ready for anything.</p>
+                    </div>
+                </div>
+                <div class="resource-card glass-card animate-on-scroll delay-2">
+                    <div class="card-img-wrapper">
+                        <img src="./images/unsplash-mountain-cloud.avif" alt="Mountain Clouds Focus">
+                        <div class="card-overlay"><span class="play-icon">▶</span></div>
+                    </div>
+                    <div class="card-meta">
+                        <span class="category-tag">Video</span>
+                        <h3>Stress Relief</h3>
+                        <p>Quick 5-minute reset during tough moments.</p>
+                    </div>
+                </div>
+                <div class="resource-card glass-card animate-on-scroll delay-3">
+                    <div class="card-img-wrapper">
+                        <img src="./images/unsplash-mountain-top.avif" alt="Mountain Top Sleep">
+                        <div class="card-overlay"><span class="play-icon">▶</span></div>
+                    </div>
+                    <div class="card-meta">
+                        <span class="category-tag">Audio</span>
+                        <h3>Sleep Session</h3>
+                        <p>Ease into deep rest with a soothing body scan.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contactZone" class="section-padding">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title text-light">Connect With Us</h2>
+                <p class="section-sub text-light-muted">We're here to support your practice</p>
+            </div>
+            <div class="contact-wrap">
+                <div class="contact-info glass-card animate-on-scroll delay-1">
+                    <h3>Get in Touch</h3>
+                    <div class="info-list">
+                        <div class="info-row">
+                            <div class="icon">📍</div>
+                            <div class="info-content">
+                                <h4>Visit Us</h4>
+                                <p>123 Wellness Street<br>Mindful City, MC 12345</p>
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <div class="icon">📧</div>
+                            <div class="info-content">
+                                <h4>Email</h4>
+                                <p>hello@innerpeace.com<br>support@innerpeace.com</p>
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <div class="icon">📞</div>
+                            <div class="info-content">
+                                <h4>Phone</h4>
+                                <p>+91 859-585-0153<br>Mon–Fri, 9am–6pm EST</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form glass-card animate-on-scroll delay-2">
+                    <h3>Send a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" required placeholder="How can we help?">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="4" required placeholder="Type your message here..."></textarea>
+                        </div>
+                        <button type="submit" class="cta-btn primary-btn full-width">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer>
-        <div> <a href="#privacy">Privacy Policy</a> • <a href="#terms">Terms</a> • <a href="#support">Support</a> </div>
-        <p>Designed by Piyush Jain • © 2025</p>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <span class="separator">•</span>
+                <a href="#terms">Terms of Service</a>
+                <span class="separator">•</span>
+                <a href="#support">Support</a>
+            </div>
+            <p class="copyright">Designed with mindfulness • © 2026 Inner Peace</p>
+        </div>
     </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mainMenu = document.getElementById('mainMenu');
+        const header = document.getElementById('mainHeader');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenuBtn.classList.toggle('active');
+            mainMenu.classList.toggle('active');
+        });
+
+        // Close menu on link click
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenuBtn.classList.remove('active');
+                mainMenu.classList.remove('active');
+            });
+        });
+
+        // Header Scroll Effect
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.15
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+        
+        // Prevent default form submit for demo
+        document.getElementById('contactForm')?.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for reaching out! We will get back to you soon.');
+            e.target.reset();
+        });
+    </script>
 </body>
 </html>
